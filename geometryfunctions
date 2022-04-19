@@ -1,15 +1,8 @@
 import math
 from os import system, name
 from time import sleep
-# Program author: Tanner Watmough
-print("Program author: Tanner Watmough")
-# Student ID#: 3554951
-print("Student ID#: 3554951")
 # Program 4: Functions. Program title with line break "\n" to make the program output cleaner. This program will allow users to select various math operations such as permiter and area calculations for squares, rectangles, and circles. After the numbers to be calculated are inputted, the answer is given, and the user is once again allowed to select a menu option, including an option to exit the program.
 print("Program 4: Functions\n")
-
-# This allows the 'extra credit' function of clearing the terminal to work on both Windows and Unix (Linux and Mac) based systems since I cannot be 100% certain if you, the tutor, is using Unix or Windows to review this project.
-
 
 def clear():
     # nt designates a windows system which uses the cls command to clear the terminal.
