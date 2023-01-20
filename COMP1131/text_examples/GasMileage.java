@@ -6,11 +6,9 @@
 
 import java.util.Scanner;
 
-public class GasMileage
-{
+public class GasMileage {
   // Calculate fuel efficiency based on values entered by user
-  public static void main(String[] args)
-  {
+  public static void main(String[] args) {
     int miles;
     double gallons, mpg;
 
@@ -25,5 +23,7 @@ public class GasMileage
     mpg = miles / gallons;
 
     System.out.println("Miles Per Gallon: " + mpg);
+
+    scan.close();
   }
 }

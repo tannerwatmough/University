@@ -7,11 +7,9 @@
 
 import java.util.Scanner;
 
-public class Echo
-{
+public class Echo {
   // Reads a character string from the user and prints it.
-  public static void main (String[] args)
-  {
+  public static void main(String[] args) {
     String message;
     Scanner scan = new Scanner(System.in);
 
@@ -20,5 +18,7 @@ public class Echo
     message = scan.nextLine();
 
     System.out.println("You entered: \"" + message + "\"");
+
+    scan.close();
   }
 }
