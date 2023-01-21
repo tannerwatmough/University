@@ -41,5 +41,7 @@ public class Rainfall {
 
     average = (april + may + june) / 3;
     System.out.println("Average rainfall: \t" + average);
+
+    scan.close();
   }
 }
