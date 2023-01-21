@@ -8,7 +8,6 @@
 import java.util.Scanner;
 
 public class Change {
-  // Calculate fuel efficiency based on values entered by user
   public static void main(String[] args) {
     int change, twoonies, dollars, quarters, dimes, nickels, cents;
 

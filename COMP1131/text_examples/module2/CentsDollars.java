@@ -7,7 +7,6 @@
 import java.util.Scanner;
 
 public class CentsDollars {
-  // Calculate fuel efficiency based on values entered by user
   public static void main(String[] args) {
     int cents, dollars;
 
