@@ -7,4 +7,4 @@ class ExponentialExplosion {
 
 // 32 as initial value is fine.
 // Eventually outputs Infinity instead of a number.
-// 700 is okay
+// 709 is the limit. 710 will push it into Infinity.
