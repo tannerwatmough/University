@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+/* 
+  Author: Tanner Watmough
+  Date: December 16, 2022
+
+  Ferelden Photography Form Style Sheet
+
+  filename: form.css
+*/ 
+
+div.formRow {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin: 7px auto;
+}
+
+div.formRow > * {
+  -webkit-flex: 1 1 150px;
+  flex: 1 1 150px;
+}
+
+form#contactForm {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+div#messageArea {
+  width: 100%;
+}
+
+.fButton {
+  color: white;
+  background-color: rgb(10, 100, 10);
+  border-radius: 6px;
+  padding: 10px;
+  margin: 5px auto;
+  cursor: pointer;  
+  width: 100px;
+}
+
+input.fButton:hover {
+  transform: translateY(-1px);
+}
+
+/* Text Area Styles */
+textarea {
+  display: block;
+  margin: 10px auto;
+  height: 200px;
+  width: 100%;
+}
+
+/* Validation Styles */
+input:focus, select:focus, textarea:focus {
+  background-color: rgb(255, 255, 200);
+}
+
+input.fButton:focus {
+  background-color: rgb(10, 100, 10);
+}
+
+input#name:focus:valid,
+input#city:focus:valid,
+input#province:focus:valid,
+input#email:focus:valid,
+input#phone:focus:valid,
+input#subject:focus:valid {
+  background: rgb(220, 255, 220) url(/images/go.png) bottom right/contain no-repeat;
+}
+
+input#name:focus:invalid,
+input#city:focus:invalid,
+input#province:focus:invalid,
+input#email:focus:invalid,
+input#phone:focus:invalid,
+input#subject:focus:invalid{
+  background: rgb(255, 232, 233) url(/images/stop.png) bottom right/contain no-repeat;
+}
+
+/* ========================================
+    Mobile Styles: less than 450px
+   =========================================
+*/
+
+@media only screen and (min-width: 450px) {
+  textarea {
+    max-width: 500px;
+  }
+
+  form#contactForm fieldset {
+    width: 100%;
+  }
+
+}
+
+/* ========================================
+    Tablet Styles: greater than 450px
+   =========================================
+*/
+
+@media only screen and (min-width: 450px) {
+  form#contactForm {
+    margin-left: 15px;
+    font-size: 1em;
+  }
+
+  form#contactForm fieldset {
+    width: 40%;
+  }
+
+  form#contactForm input{
+    font-size: 1em;
+  }
+  
+  input[type='submit'] {
+    margin: 5px;
+    width: 33%;
+    max-width: 150px;
+  }
+
+  textarea {
+    max-width: 500px;
+  }
+
+  form#contactForm fieldset {
+    width: 100%;
+  }
+}
+
+/* ========================================
+    Desktop Styles: greater than 820px
+   =========================================
+*/
+
+@media only screen and (min-width: 820px) {
+  textarea {
+    width: 100%;
+  }
+}

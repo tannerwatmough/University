@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      Ferelden Photography Home Page
+      Author: Tanner Watmough
+      Date: December 15, 2022
+
+      Filename: index.html
+    -->
+
+    <title>Ferelden Photography | Home</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="photography, ferelden, photographer" />
+
+    <link href="/stylesheets/base.css" rel="stylesheet" />
+    <link href="/stylesheets/print.css" rel="stylesheet" />
+    <link href="/stylesheets/index_layout.css" rel="stylesheet" />
+    <link href="/stylesheets/dark_theme.css" rel="stylesheet" id="dark_theme" disabled/>
+
+    <script src="/scripts/marking.js" async></script>
+    <script src="/scripts/slideshow.js" async></script>
+    <script src="https://kit.fontawesome.com/df134a6968.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="clearfix middle-left">
+      <span class="tooltip">
+        <i id="imgTooltip" class="fa-solid fa-circle-info"></i>
+        <span id="clickable" class="tooltiptext">This is a clickable image!</span>
+      </span>
+      <a href="index.html">
+        <!-- Thanks to Andrew Hutchings on Unsplash for the image -->
+        <img src="/images/company_logo.jpg" alt="Ferelden Photography logo" height="120"/>
+      </a>    
+      <nav class="horizontal">
+        <a id="darkmode" href="#" onclick="darkModeToggle()"><i class="fa-solid fa-circle-half-stroke"></i></a>
+        <a id="marking" href="#"><i class="fa-solid fa-marker"></i></a>
+        <a id="navicon" href="#"><img src="/images/navicon.png" alt="" /></a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="crossreference.html">Reference</a></li>
+          <span class="tooltip">
+            <i id="navTooltip" class="fa-solid fa-circle-info"></i>
+            <span class="tooltiptext">
+              The navigation bar has &lt;a&gt;, &lt;ul&gt;, and &lt;li&gt; tags.
+              It also uses float positioning!  
+            </span>
+          </span> 
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <aside>
+        <figure>
+          <video id="videoReq" controls="controls" poster="/images/carouselposter.png">
+            <source src="/multimedia/carousel.mp4" />
+            <source src="/multimedia/carousel.webm" />
+            <track kind="captions" label="Upcoming Event Captions" src="captions.vtt" default />
+            <p><em>To play this video, your browser needs to support HTML5.</em></p>
+          </video>
+          <figcaption>
+            <span class="tooltip">
+              <i class="fa-solid fa-circle-info"></i>
+              <span class="tooltiptext">
+                This is the video requirement! It also uses a box-shadow.
+              </span>
+            </span>
+            Upcoming Photoshoot Announcement
+          </figcaption>
+        </figure>
+      </aside>
+      <article>
+        <h1 id="textShadow">
+          <span class="tooltip">
+            <i class="fa-solid fa-circle-info"></i>
+            <span class="tooltiptext">This is a styled header with a text shadow.</span>
+          </span> 
+          Welcome to Ferelden Photography!
+        </h1>
+        <div id="slideshow" class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numberText">1 / 12</div>
+            <img src="/images/christmasdecor.jpg" alt="Christmas Decor" />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numberText">2 / 12</div>
+            <img src="/images/christmastree.jpg" alt="Christmas Tree" />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numberText">3 / 12</div>
+            <img src="/images/holiday.jpg" alt="Christmas Holiday" />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numberText">4 / 12</div>
+            <img src="/images/holly.jpg" alt="Christmas Holly" />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numberText">5 / 12</div>
+            <img src="/images/sleigh.jpg" alt="Christmas Sleigh" />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numberText">6 / 12</div>
+            <img src="/images/frostbirds.jpg" alt="Frosty Birds" />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numberText">7 / 12</div>
+            <img src="/images/frostyleaves.jpg" alt="Frosty Leaves" />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numberText">8 / 12</div>
+            <img src="/images/snowman.jpg" alt="Snowman" />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numberText">9 / 12</div>
+            <img src="/images/snowylandscape.jpg" alt="Snowy Landscape" />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numberText">10 / 12</div>
+            <img src="/images/snowytrees.jpg" alt="Snowy Trees" />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numberText">11 / 12</div>
+            <img src="/images/crispsnow.jpg" alt="Crisp Snow" />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numberText">12 / 12</div>
+            <img src="/images/christmasbaby.jpg" alt="Christmas Baby" />
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+
+        <div id="dotDiv">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+          <span class="dot" onclick="currentSlide(9)"></span>
+          <span class="dot" onclick="currentSlide(10)"></span>
+          <span class="dot" onclick="currentSlide(11)"></span>
+          <span class="dot" onclick="currentSlide(12)"></span>
+        </div>
+      </article>
+      <aside>
+        <h2 id="audioReq">Timed Photography Challenge</h2>
+        <p class="right">
+          Take a photo and post it on Instagram by the time the song is finished!
+          Tag us <cite>@FereldenPhotography</cite> with your picture!
+        </p>
+        <span class="tooltip">
+          <i class="fa-solid fa-circle-info right"></i>
+          <span class="tooltiptext">
+            This is the audio requirement!
+          </span>
+        </span>
+        <audio controls="controls">
+          <source src="/multimedia/musicchallenge.mp3" type="audio/mp3" />
+          <source src="/multimedia/musicchallenge.ogg" type="audio/ogg" />
+          <p><em>To play this audio clip, your browser needs to support HTML5</em></p>
+        </audio>
+      </aside>
+
+    </main>
+    <footer id="mainFooter">
+      <address>
+        <span class="tooltip">
+          <i class="fa-solid fa-circle-info"></i>
+          <span class="tooltiptext">This is the main page footer!</span>
+        </span>    
+         Ferelden Photography &#8226; 210 Dragon Way &#8226; Denerim, FD
+      </address>
+      <nav class="vertical">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </nav>
+      <p id="update">
+        <span class="tooltip">
+          <i class="fa-solid fa-circle-info"></i>
+          <span class="tooltiptext">
+            This is the page was last updated requirement. It's also a &lt;p&gt;
+            element.
+          </span>
+        </span> 
+        Page last modified on December 16, 2022
+      </p>
+    </footer>
+  </body>
+</html>

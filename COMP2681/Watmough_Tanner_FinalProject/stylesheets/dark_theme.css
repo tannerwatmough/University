@@ -1,0 +1,221 @@
+@charset "utf-8";
+
+/* 
+  Author: Tanner Watmough
+  Date: December 15, 2022
+
+  Ferelden Photography Dark Mode Style Sheet
+
+  filename: dark_theme.css
+*/ 
+
+/* Basic styles for all devices and pages */
+
+/* =========================================
+ *  Reset Dark Mode Styles  
+ * =========================================
+*/ 
+
+/* nav links aren't underlined */
+nav a {
+  color: white;
+}
+
+/* =========================================
+ *  Dark Mode Layout Styles  
+ * =========================================
+*/
+
+body {
+  background-color: rgb(30, 30, 30);
+}
+
+header, footer {
+  background-color: rgb(20, 20, 20);
+}
+
+aside {
+  background-color: brown;
+  background-color: hsla(20, 100%, 20%, 0.8);
+}
+
+video {
+  box-shadow: rgb(251, 251, 251) 8px 8px 15px;
+}
+
+/* =========================================
+ *  Link Dark Mode Styles  
+ * =========================================
+*/ 
+
+a:link {
+  color: lightblue;
+}
+
+a:visited {
+  color: steelblue;
+}
+
+a:hover {
+  color: lightblue;
+}
+
+a:focus {
+  color: lightblue;
+}
+
+/* =========================================
+ *  Nav Dark Mode Styles  
+ * =========================================
+*/ 
+header > nav > ul > li a:link {
+  color: white;
+}
+
+header > nav > a:link {
+  color: white;
+}
+
+header > nav > ul > li a:visited, header > nav > a:visited {
+  color: white;
+}
+
+header > nav > ul > li a:hover{
+  background-color: white;
+  color: black;
+}
+
+
+header > nav > ul > li a:focus{
+  background-color: white;
+  color: black;
+}
+
+header > nav > ul > li {
+  background-color: rgba(40, 40, 40, 0.8);
+}
+
+/* =========================================
+ *  Typographic Dark Mode Styles  
+ * =========================================
+*/ 
+h1, h2, h3, h4, h5, h6, p, blockquote, address, i, figcaption, dl, dt, dd, ol, ul, span, form {
+  color: white;
+}
+
+h1 {
+  text-shadow: rgb(200, 200, 200) 0 0 5px;
+}
+
+
+/* =========================================
+ *  Tooltip Dark Mode Styles  
+ * =========================================
+*/
+
+.tooltip .tooltiptext {
+  background-color: white;
+  color: black;
+}
+
+/* =========================================
+ *  Services Page Dark Mode Styles
+ * =========================================
+*/
+div.flexItem {
+  background-color: rgba(40, 40, 40, 0.8);
+}
+
+/* =========================================
+ *  About Page Dark Mode Styles
+ * =========================================
+*/
+main img {
+  box-shadow:rgb(200, 200, 200) 2px 0px 5px;
+}
+
+/* =========================================
+ *  Booking Page Dark Mode Styles
+ * =========================================
+*/
+#calendar_table {
+  background-color: rgb(31, 31, 31);
+  box-shadow: rgb(200, 200, 200) 0px 0px 1px,
+              rgb(200, 200, 200) 0px 0px 5px,
+              rgb(200, 200, 200) 0px 0px 10px,
+              rgb(200, 200, 200) 0px 0px 20px;
+}
+
+.calendar_weekdays {
+  background-color: rgb(31, 31, 31);
+  color: white;
+}
+
+.calendar_dates {
+  background-color: rgb(31, 31, 31);
+  color: white;
+}
+
+#calendar_table caption {
+  color: white;
+}
+
+div#currentTime, div#countdown {
+  color: skyblue;
+}
+
+
+/* =========================================
+ *  Contact Page Dark Mode Styles
+ * =========================================
+*/
+input, textarea {
+  background-color: rgba(200, 200, 200);
+}
+
+/* =========================================
+ *  Support Page Dark Mode Styles
+ * =========================================
+*/
+#box1, #box2, #box3, #box4, #box5, #box6 {
+  border-color: white;
+}
+
+/* ===============================
+   Mobile Devices: 0 to 480px 
+   ===============================
+*/
+
+@media only screen and (max-width: 480px) {
+
+}
+
+/* ===============================
+  Tablet Devices: 481px to 768px 
+  ===============================
+*/
+
+@media only screen and (min-width: 481px) {
+  html {
+    /* Thanks to Felix Rostig from Unsplash for the image */
+    background-image: url(/images/nightseoul.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  header > nav > ul > li a:hover{
+    background-color: white;
+    color: black;
+  }
+
+}
+
+/* ===============================
+  Desktop Devices: 769px and wider
+  ===============================
+*/
+
+@media only screen and (min-width: 769px) {
+
+}

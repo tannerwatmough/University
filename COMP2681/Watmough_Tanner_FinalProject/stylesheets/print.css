@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+/* 
+  Author: Tanner Watmough
+  Date: December 15, 2022
+
+  Ferelden Photography Print Style Sheet
+
+  filename: print.css
+*/ 
+
+@media print {
+  /* Hides header and footer when printing */
+  header, footer, figure, audio, div#slideshow {
+    display: none;
+  }
+
+  /* Page Box Styles */
+  @page {
+    size: 8.5in 11in;
+    margin: 0.5in;
+  }
+
+  /* Body and HTML Print Layout */
+  html {
+    background-color: transparent;
+    height: 100%;
+  }
+  
+  body {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    margin: 0px auto;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  /* Typography Styles */
+  html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h1 {
+    font-size: 28pt;
+    line-height: 30pt;
+    margin: 0.3in 0in 0.2in;
+  }
+
+  h2 {
+    font-size: 20pt;
+    margin: 0.1in 0in 0.1in 0.3in;
+  }
+
+  h3, h4, h5, h6 {
+    font-size: 12pt;
+    margin: 0.1in 0in 0.1in 0.3in;
+  }
+
+  p {
+    margin: 0.1in 0in 0.1in 0.3in;
+  }
+
+  /* List Styles */
+  ul {
+    list-style-type: disc;
+    margin-left: 0.5in;
+  }
+
+  li {
+    padding: 0;
+  }
+
+  i.fa-circle-info {
+    display: none;
+  }
+
+  /* Hypertext Styles */
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  section#websites a::after {
+    content: " (" attr(href) ") ";
+    font-weight: bold;
+    word-wrap: break-word;
+  }
+
+  /* Page Break Styles */
+  h1 {
+    page-break-before: always;
+  }
+
+  h2 {
+    page-break-after: avoid;
+  }
+
+  img, ol, ul {
+    page-break-inside: avoid;
+  }
+
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+}

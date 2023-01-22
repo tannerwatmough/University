@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      Ferelden Photography Contact Page
+      Author: Tanner Watmough
+      Date: December 15, 2022
+
+      Filename: contact.html
+    -->
+
+    <title>Ferelden Photography | Contact</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="/stylesheets/base.css" rel="stylesheet" />
+    <link href="/stylesheets/print.css" rel="stylesheet" />
+    <link href="/stylesheets/services_layout.css" rel="stylesheet" />
+    <link href="/stylesheets/form.css" rel="stylesheet" />
+    <link href="/stylesheets/dark_theme.css" rel="stylesheet" id="dark_theme" disabled/>
+
+    <script src="/scripts/marking.js" async></script>
+    <script src="/scripts/forms.js" async></script>
+    <script src="https://kit.fontawesome.com/df134a6968.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="clearfix">
+      <a href="index.html">
+        <!-- Thanks to Andrew Hutchings on Unsplash for the image -->
+        <img src="/images/company_logo.jpg" alt="Ferelden Photography logo" height="120"/>
+      </a>
+      <nav class="horizontal">
+        <a id="darkmode" href="#" onclick="darkModeToggle()"><i class="fa-solid fa-circle-half-stroke"></i></a>
+        <a id="marking" href="#"><i class="fa-solid fa-marker"></i></a>
+        <a id="navicon" href="#"><img src="/images/navicon.png" alt="" /></a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li></div><a href="crossreference.html">Reference</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Contact Us</h1>
+      <div class="flexItem">
+        <form id="contactForm" action="http//www.google.com/process.cgi" method="POST">
+          <span class="tooltip">
+            <i class="fa-solid fa-circle-info"></i>
+            <span class="tooltiptext">This satisfies all of the web form and last
+              two JavaScript requirements.</span>
+          </span> 
+          <fieldset id="contactInfo">
+            <legend>Contact Information</legend>
+
+            <!-- I used firstName for id as the assignment said field names must be fName etc. -->
+            <div class="formRow">
+              <label for="name">Name *</label>
+              <input name="name" id="name" type="text" required />
+            </div>
+
+            <div class="formRow">
+              <label for="phone">Phone</label>
+              <input name="phone" id="phone" type="tel" placeholder="(xxx) xxx-xxxx" 
+                pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required/>
+            </div>
+
+            <div class="formRow">
+              <label for="email">Email</label>
+              <input name="email" id="email" type="email" placeholder="example@email.com" 
+                pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required />
+            </div>
+
+            <div class="formRow">
+              <label for="city">City *</label>
+              <input name="city" id="city" type="text" required />
+            </div>
+
+            <div class="formRow">
+              <label for="province">Province *</label>
+              <input name="province" id="province" type="text" required/>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Message</legend>
+
+            <div class="formRow">
+              <label for="subject">Subject *</label>
+              <input name="subject" id="subject" type="text" required/>
+            </div>
+
+            <div id="messageArea">
+              <label for="body">Email Body</label>
+              <textarea name="body" id="body">
+              </textarea>
+            </div>
+            <input id="sendBtn" class="fButton" value="Send" type="submit" />
+            <button id="resetBtn" class="fButton" type="button">Reset</button>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <address>
+        Ferelden Photography &#8226; 210 Dragon Way &#8226; Denerim, FD
+      </address>
+      <nav class="vertical">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </nav>
+      <p>Page last modified on December 15, 2022</p>
+    </footer>
+  </body>
+</html>

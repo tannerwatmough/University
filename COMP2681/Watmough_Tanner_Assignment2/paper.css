@@ -1,0 +1,219 @@
+@charset "utf-8";
+/*
+
+   Park City Gazette Style Sheet
+   Author: Tanner Watmough
+   Date:   November 22, 2022
+
+   Filename: paper.css
+   
+   Reviewed and referenced previous tutorials in HTML5, CSS3, and JavaScript 6e 
+   (specifically tutorials in module 3 and module 4).
+*/
+
+/* Layout */
+
+body {
+  display: -ms-grid;
+  display: grid;
+
+  -ms-grid-columns: 15% 40% 40%;
+  -ms-grid-rows: auto auto auto;
+  grid-template-columns: 15% 40% 40%;
+  grid-template-rows: auto auto auto;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+  min-width: 1000px;
+}
+
+body > header {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  -ms-grid-row: 1;
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+body > nav {
+  -ms-grid-column: 1;
+  -ms-grid-row: 2;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  margin: 0;
+}
+
+#leftColumn {
+  -ms-grid-column: 2;
+  -ms-grid-row: 2;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+#rightColumn {
+  -ms-grid-column: 3;
+  -ms-grid-row: 2;
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+body > footer {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  -ms-grid-row: 3;
+  grid-column: 1 /4;
+  grid-row: 3 / 4;
+}
+
+/* Styles */
+
+/* HTML and Body Styles */
+html {
+  background-color: ivory;
+  background-color: hsl(180, 20%, 95%);
+}
+
+body {
+  background-color: snow;
+  background-color: hsl(180, 5%, 95%);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+  padding: 1em;
+  margin: 0 0 0 0;
+}
+
+p {
+  padding-left: 0.5em;
+}
+
+#stories {
+  clear: both;
+  width: 100%;
+}
+
+/* Heading Styles */
+header {
+  height: 150px;
+}
+
+header img {
+  position: absolute;
+}
+
+header, header > img {
+  border-left: 1px solid white;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+h1 {
+  font-size: 1.8em;
+  letter-spacing: 0.1em;
+  margin: 0 0 0.2em 0.2em;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#stories > h1 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#encounter > h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  background-color: snow;
+  background-color: hsl(180, 5%, 95%);
+  margin-top: 0;
+}
+
+/* Aside Styles */
+#encounter {
+  border: 1px black solid;
+  width: 55%;
+  float: right;
+  margin: 0.3em;
+  background-color:rgb(171, 120, 78);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#encounter > ul {
+  padding-left: 1.3em;
+}
+
+#encounter > ul > li {
+  font-size: 0.8em;
+  line-height: 1em;
+  padding: 0.5em 0.5em 0 0;
+}
+
+aside img {
+  display: block;
+  margin: 1em auto;
+}
+
+
+/* Navigation Styles */
+header, nav, #stories {
+  background-color: rgb(155, 155, 0);
+  background-image: url('images/parch2.jpg');
+  background-repeat: repeat;
+}
+
+nav {
+  position: relative;
+  left: 1px;
+}
+
+nav > ul {
+  line-height: 2em;
+  list-style-type: none;
+  padding-left: 2em;
+}
+
+nav > ul > li.newgroup {
+  margin-top: 1.5em;
+}
+
+nav > ul > li > a:link, nav > ul > li > a:visited {
+  color: black;
+  color: hsla(0, 0%, 0%, 0.8);
+  text-decoration: none;
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:active {
+  color: blue;
+  color: hsla(180, 50%, 20%, 0.8);
+  text-decoration: underline;
+}
+
+/* List Styles */
+#stories ul {
+  list-style-type: square;
+  padding-bottom: 0.5em;
+}
+
+/* Footer Styles */
+body > footer {
+  background-color: rgb(155, 155, 0);
+  background-image: url('images/parch.jpg');
+  background-repeat: repeat;
+  font: normal small-caps bold 0.9em/3em Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  border: 1px solid white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  margin: 0;
+}

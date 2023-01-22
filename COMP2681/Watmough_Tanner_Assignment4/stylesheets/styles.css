@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/*
+Assignment 4: Splash Screen Styles
+Author: Tanner Wamtough
+Date:   December 7, 2022
+
+Filename: styles.css
+*/
+
+/* HTML and Body styles */
+html {
+  background-color: rgb(230, 230, 0);
+}
+
+body {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  margin: 50px auto;
+  text-align: center;
+  background-color: rgb(240, 240, 20);
+}
+
+/* Header Styles */
+header {
+  padding: 10px;
+}
+
+header img {
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Main Styles */
+
+main {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: rgb(50, 50, 240);
+  color: rgb(255, 255, 255);
+  font: bold 1.2em sans-serif;
+  margin: 10px auto;
+  padding: 15px;
+  width: 75%;
+  max-width: 700px;
+  border: 15px inset rgb(200, 200, 200);
+}
+
+/* Aside Styles */
+aside {
+  margin: 10px;
+  font: italic 2em "American Typewriter", serif; 
+}

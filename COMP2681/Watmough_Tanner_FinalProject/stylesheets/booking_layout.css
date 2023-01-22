@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 10
+   Tutorial Case
+
+   Used CSS stylings for calendar table from textbook.
+
+   Ferelden Photography Booking Style Sheet
+
+   Filename: booking_layout.css
+
+*/
+
+h1, h2 {
+  text-align: center;
+  font-variant: small-caps;
+}
+
+i.fa-circle-info {
+  font-size: 1rem;
+}
+
+.tooltip .tooltiptext {
+  font-size: 1rem;
+  font-variant: normal;
+  font-weight: normal;
+}
+
+/* Countdown */
+
+div#currentTime {
+  text-align: center;
+  font-size: 2rem;
+  padding: 15px;
+  color: rgb(50, 50, 200);
+}
+
+div#countdown {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+div#countdown > * {
+  margin: auto 15px;
+}
+
+
+/* Calendar styles */ 
+
+
+#calendar_table {
+   background-color: rgb(231, 231, 231);  
+   font-size: 0.9em; 
+   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+   width: 100%;
+
+   box-shadow: rgb(51, 51, 51) 0px 0px 1px,
+               rgb(51, 51, 51) 0px 0px 5px, 
+               rgb(51, 51, 51) 0px 0px 10px,
+               rgb(51, 51, 51) 0px 0px 20px;               
+}
+
+#calendar_table caption {
+   caption-side: top; 
+   text-align: center;
+   padding-bottom: 20px; 
+   font-size: 1.6em; 
+   letter-spacing: 0.3em;
+}
+
+.calendar_weekdays {
+   background-color: ivory;
+   width: 14.28%; 
+   font-size: 1em; 
+   border-bottom: 3px solid gray;
+}
+
+.calendar_dates {
+   text-align: left; 
+   vertical-align: top;
+   font-size: 0.8em;
+   padding: 3px;
+   border: 1px dotted gray;
+   background-color: white;
+   height: 60px;
+}
+
+
+/* ===============================
+   Mobile Devices: 0 to 480px 
+   ===============================
+*/
+
+@media only screen and (max-width: 480px) {
+  div#countdown {
+    font-size: 1rem;
+  }
+
+  #calendar_table {
+    font-size: 0.7rem;
+  }
+
+}
+
+/* ===============================
+  Tablet Devices: 481px to 768px 
+  ===============================
+*/
+
+@media only screen and (min-width: 481px) {
+
+}
+
+/* ===============================
+  Desktop Devices: 769px and wider
+  ===============================
+*/
+
+@media only screen and (min-width: 769px) {
+
+}

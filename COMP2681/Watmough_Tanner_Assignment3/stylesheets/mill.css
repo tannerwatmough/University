@@ -1,0 +1,181 @@
+/*
+Assignment 3: Web Form
+Name: Tanner Watmough
+Date: December 4, 2022
+
+Filename: mill.css
+
+Reviewed and referenced previous tutorials in HTML5, CSS3, and JavaScript 6e 
+(specifically tutorial 7).
+*/
+
+/* Base Reset */
+
+footer, header, main, nav {
+  display: block
+}
+
+address, body, div, footer, h1, header, html, img, main, nav, a, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.2em;
+  overflow-x: hidden;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+nav ul {
+  list-style: none;
+  list-style-image: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+/* HTML and Body Styles */
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 100%;
+}
+
+body {
+  border-left: 3px solid gray;
+  border-right: 3px solid gray;
+  min-height: 100%;
+  margin: 0px auto;
+  min-width: 320px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Header Styles */
+
+header img {
+  width: 100%;
+}
+
+header {
+  background: rgb(200, 240, 240);
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+
+/* Navigation List Styles */
+
+header nav ul {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  margin: 5px;
+  padding: 0;
+}
+
+header nav ul li {
+  flex: 1 1 auto;
+  font-size: 1em;
+  line-height: 1.3em;
+  height: 1.3em;
+  background-color: lightsteelblue;
+  border: 1px solid grey;
+  box-shadow: inset rgb(51, 51, 51) -3px -3px 7px;
+  text-align: center;
+  margin: 2px;
+}
+
+header nav ul li a {
+  color: black;
+  display: block;
+  width: 100%;
+}
+
+header nav ul li a:hover {
+  color: rgb(20, 20, 200);
+}
+
+a#navicon {
+  display: none;
+}
+
+/* Heading Styles */
+
+h1 {
+  font-size: 1.8em;
+  margin: 15px;
+  line-height: 1.5em;
+}
+
+p {
+  margin: 15px;
+}
+
+/* Footer Styles */
+
+hr {
+  border: 1px solid blue;
+}
+
+footer {
+  color: blue;
+  font-size: 1em;
+  text-align: center;
+  padding: 25px;
+}
+
+/* ========================================
+    Mobile Styles: 0px to 640px
+   =========================================
+*/
+
+@media only screen and (max-width: 640px) {
+  a#navicon {
+    display: block;
+    width: 10%;
+    padding: 0;
+    margin: 0;
+  }
+
+  header nav ul {
+    display: none;
+    margin: 0;
+  }
+
+  header nav ul li {
+    font-size: 1em;
+    line-height: 1.3em;
+    height: 1.3em;
+    margin-top: 0;
+    padding: 2px;
+  }
+
+  a#navicon:hover+ul, header nav ul:hover {
+    display: block;
+  }
+}
+
+
+/* ========================================
+    Desktop Styles: greater than 820px
+   =========================================
+*/
+
+@media only screen and (min-width: 820px) {
+  header nav ul {
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+}

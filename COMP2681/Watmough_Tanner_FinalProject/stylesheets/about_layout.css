@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+/* 
+  Author: Tanner Watmough
+  Date: December 15, 2022
+
+  Ferelden Photography About Layout Style Sheet
+
+  filename: about_layout.css
+*/ 
+
+main {
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+main i {
+  font-size: 1rem;
+}
+
+
+main .tooltip .tooltiptext {
+  font-weight: normal;
+  font-size: 0.8rem;
+  width: 200px;
+}
+
+main img {
+  width: 80%;
+}
+
+main img {
+  position: absolute;
+  box-shadow: rgb(0, 0, 0) 2px 2px 15px;
+}
+
+main img:first-of-type {
+  top: 250px;
+  transform: rotate(-20deg) translateY(50px) translateX(10px);
+  box-shadow: rgb(0, 0, 0) 2px 2px 15px;
+}
+
+main img:nth-of-type(2) {
+  top: 500px;
+  transform: rotate(20deg) translateY(50px) translateX(50px);
+}
+
+main img:nth-of-type(3) {
+  top: 750px;
+  transform: rotate(-10deg) rotate(-20deg) translateY(50px) translateX(30px);
+}
+
+main img:nth-of-type(4) {
+  top: 1000px;
+  transform: rotate(-10deg) translateY(50px) translateX(50px);
+  opacity: 0.7;
+}
+
+main img:nth-of-type(5) {
+  top: 1090px;
+  transform: rotate(-10deg) translateX(40px);
+  opacity: 0.7;
+}
+
+main img:last-of-type {
+  top: 1140px;
+  transform: rotate(-10deg) translateX(20px);
+  opacity: 0.7;
+}
+
+footer {
+  top: 2000px;
+}
+
+/* ===============================
+   Mobile Devices: 0 to 480px 
+   ===============================
+*/
+
+@media only screen and (max-width: 480px) {
+
+
+}
+
+/* ===============================
+  Tablet Devices: 481px to 768px 
+  ===============================
+*/
+
+@media only screen and (min-width: 481px) {
+  main img {
+    width: 55%;
+  }
+
+  main img:first-of-type {
+    top: 180px;
+  }
+
+  main img:nth-of-type(2) {
+    top: 150px;
+    left: 150px;
+  }
+
+  main img:nth-of-type(3) {
+    top: 450px;
+  }
+  
+  main img:nth-of-type(4) {
+    top: 450px;
+    left: 125px;
+    opacity: 1;
+  }
+  
+  main img:nth-of-type(5) {
+    top: 720px;
+    opacity: 1;
+  }
+  
+  main img:last-of-type {
+    top: 720px;
+    left: 170px;
+    opacity: 1;
+  }
+
+  footer {
+    top: 1200px;
+  }
+  
+}
+
+/* ===============================
+  Desktop Devices: 769px and wider
+  ===============================
+*/
+
+@media only screen and (min-width: 769px) {
+  main img {
+    width: 35%;
+  }
+  
+  main img:nth-of-type(4) {
+    top: 200px;
+    left: 320px;
+  }
+  
+  main img:nth-of-type(5) {
+    top: 475px;
+    left: 170px;
+  }
+  
+  main img:last-of-type {
+    top: 500px;
+    left: 370px;
+  }
+
+  footer {
+    top: 1100px;
+  }
+  
+}

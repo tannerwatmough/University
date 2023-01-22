@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+/* 
+  Author: Tanner Watmough
+  Date: December 15, 2022
+
+  Ferelden Photography Support Style Sheet
+
+  filename: support.css
+*/ 
+
+h1 {
+  text-align: center;
+}
+
+h1 i {
+  font-size: 1rem;
+  top: 10px;
+}
+
+h1 .tooltip .tooltiptext {
+  font-size: 0.8rem;
+  font-weight: normal;
+  bottom: -100px;
+  left: -100px;
+}
+
+main {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  width: 50%;
+}
+
+div > div {
+  width: 100%;
+  height: 200px;
+  border: 5px dashed black;
+  margin: 10px auto;
+  padding: 25px;
+}
+
+div h1 {
+  color: white;
+  padding: 10px;
+  width: 100%;
+  height: 200px;
+}
+
+#box1 {
+  background: url(/images/bark.jpg);
+  background-clip: border-box;
+}
+
+#box2 {
+  background: url(/images/bark.jpg);
+  background-clip: padding-box;
+}
+
+#box3 {
+  background: url(/images/bark.jpg);
+  background-clip: content-box;
+
+}
+
+#box4 {
+  background: url(/images/bark.jpg);
+  background-origin: border-box;
+  background-repeat: no-repeat;
+}
+
+#box5 {
+  background: url(/images/bark.jpg);
+  background-origin: padding-box;
+  background-repeat: no-repeat;
+}
+
+#box6 {
+  background: url(/images/bark.jpg);
+  background-origin: content-box;
+  background-repeat: no-repeat;
+}

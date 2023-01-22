@@ -1,0 +1,486 @@
+@charset "utf-8";
+
+/* 
+  Author: Tanner Watmough
+  Date: December 15, 2022
+
+  Ferelden Photography Base Style Sheet
+
+  filename: base.css
+*/ 
+
+/* Basic styles for all devices and pages */
+
+/* =========================================
+ *  Reset Base Styles  
+ * =========================================
+*/ 
+
+/* Making sure all sections are block display */
+article, aside, figcaption, figure, footer, header, main, nav, section {
+  display: block;
+}
+
+/* Get rid of default positioning and ensure width is border-box */
+address, article, aside, blockquote, body, cite, div, dl, dt, dd, em, figcaption,
+figure, footer, h1, h2, h3, h4, h5, h6, header, html, img, li, main, nav, nav a,
+ol, p, section, span, ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  /* Ensures support for older browsers for border-box */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Default list styles */
+ul, ol {
+  padding-left: 40px;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: upper-alpha;
+}
+
+/* nav lists don't have styles (bullets) */
+nav ul {
+  list-style: none;
+  list-style-image: none;
+  padding-left: 0;
+}
+
+/* nav links aren't underlined */
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+/* =========================================
+ *  Base Layout Styles  
+ * =========================================
+*/
+
+body {
+  position: relative;
+  min-height: 100vh;
+  max-width: 800px;
+  background-color: rgb(250, 250, 250);
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: 150px;
+}
+
+header, body {
+  width: 100%;
+  min-width: 305px;
+  margin: 0 auto;
+}
+
+header, footer {
+  background-color: rgb(240, 240, 245);
+}
+
+header {
+  position: relative;
+}
+
+body > header > img {
+  width: 100%;
+  max-width: 368px;
+  display: block;
+  margin: 0px auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+aside {
+  background-color: tan;
+  background-color: hsla(40, 50%, 30%, 0.8);
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+}
+
+audio, video {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+}
+
+video {
+  box-shadow: rgb(51, 51, 51) 8px 8px 15px;
+}
+
+video[poster] {
+  object-fit: fill;
+  width: 80%;
+}
+
+figcaption {
+  text-align: center;
+}
+
+h1 {
+  margin: 10px 15px;
+}
+
+h2 {
+  margin: 5px 15px;
+}
+
+main p {
+  margin: 5px 15px;
+}
+
+li {
+  padding: 5px 0;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 130px;
+  margin-top: 20px;
+}
+
+footer p, footer address {
+  margin-left: 15px;
+  padding-left: 15px;
+}
+
+/* =========================================
+ *  Link Base Styles  
+ * =========================================
+*/ 
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: steelblue;
+}
+
+a:hover {
+  color: blue;
+}
+
+a:focus {
+  color: blue;
+  font-weight: bold;
+}
+
+a:active {
+  font-size: 1.2rem;
+}
+
+/* =========================================
+ *  Nav Base Styles  
+ * =========================================
+*/ 
+header > nav > ul > li {
+  float: left;
+  width: 100%;
+}
+
+header > nav > ul > li a:link {
+  color: black;
+  width: 100%;
+  margin: 0; 
+  padding: 10px 15px;
+}
+
+header > nav > a:link {
+  color: black;
+}
+
+header > nav > ul > li a:visited, header > nav > a:visited {
+  color: black;
+}
+
+header > nav > ul > li a:hover{
+  background-color: black;
+  color: white;
+}
+
+
+header > nav > ul > li a:focus{
+  background-color: black;
+  color: white;
+}
+
+header > nav > ul > li a:active{
+  font-size: 1rem;
+}
+
+/* =========================================
+ *  Typographic Base Styles  
+ * =========================================
+*/ 
+html {
+  font-size: 16px;
+}
+
+header, footer {
+  text-align: center;
+}
+
+footer p {
+  text-align: left;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3, h4, h5, h6 {
+  font-size: 1.2rem;
+}
+
+ol.romanList {
+  list-style: lower-roman;
+}
+
+/* =========================================
+ *  Tooltip Base Styles  
+ * =========================================
+*/
+i.fa-circle-info {
+  visibility: hidden;
+  position: absolute;
+  left: -20px;
+}
+
+i#imgTooltip {
+  top: -30px;
+  left: 20%;
+}
+
+i.right {
+  left: 5px;
+}
+
+i.down {
+  font-size: 0.9rem;
+  top: 15px;
+  left: -20px;
+}
+
+.tooltip {
+  visibility: hidden;
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-style: normal;
+  font: 0.8rem;
+  padding: 5px 10px;
+  border-radius: 6px;
+  position: absolute;
+  bottom: 100%;
+  left: -10px;
+  z-index: 1;
+}
+
+.lg-box .tooltip .tooltiptext {
+  width: 300px;
+}
+
+.middle-left .tooltip .tooltiptext{
+  bottom: 100%;
+  left: -155px;
+}
+
+.right .tooltip .tooltiptext {
+  left: 10px;
+}
+
+.down .tooltip .tooltiptext {
+  left: -10px;
+  bottom: 0;
+}
+
+li > .tooltip .tooltiptext {
+  left: 15px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* ===============================
+   Track Styles
+   ===============================
+*/
+::cue {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  font: 1.2rem serif;
+}
+
+
+/* ===============================
+   Mobile Devices: 0 to 480px 
+   ===============================
+*/
+
+@media only screen and (max-width: 480px) {
+  body > header > a > img {
+    display: none; 
+  }
+
+  a#darkmode {
+    display: block;
+    float: left;
+    padding: 15px;
+  }
+
+  a#marking {
+    display: block;
+    float: left;
+    padding: 15px;
+  }
+
+  i#imgTooltip, i#navTooltip {
+    display: none;
+  }
+
+  a#navicon {
+    display: block;
+    float: right;
+    padding: 15px;
+  }
+
+  a > i {
+    padding-top: 7px;
+  }
+ 
+ nav.horizontal ul {
+    display: none;
+ }
+ 
+ a#navicon:hover+ul, nav.horizontal ul:hover {
+    display: block;
+ }
+
+}
+
+/* ===============================
+  Tablet Devices: 481px to 768px 
+  ===============================
+*/
+
+@media only screen and (min-width: 481px) {
+  html {
+    /* Thanks to Felix Rostig from Unsplash for the image */
+    background-image: url(/images/html_background.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  body {
+    width: 85%;
+  }
+
+  header {
+    position: relative;
+  }
+
+  a#navicon {
+    display: none;
+  }
+
+  a#darkmode, a#marking {
+    position: absolute;
+    font-size: 1.2rem;
+    right: 15%;
+    top: 50%;
+  }
+
+  a#darkmode {
+    right: 5%;
+  }
+
+  header > nav > ul > li {
+    background-color: rgba(220, 220, 220, 0.8);
+    float: left;
+    width: 25%;
+    font-size: 0.9rem;
+  }
+
+  header > nav > ul > li:last-of-type {
+    width: 50%;
+  }
+
+  header > nav > ul > li a:hover{
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin: 0; 
+    padding: 5px 15px;
+  }
+
+  footer address {
+    float: left;
+    width: 68%;
+    text-align: left;
+    padding-top: 10px;
+    margin-left: 2%;
+  }
+
+  footer nav {
+    float: left;
+    width: 30%;
+  }
+
+  footer p {
+    clear: both;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* ===============================
+  Desktop Devices: 769px and wider
+  ===============================
+*/
+
+@media only screen and (min-width: 769px) {
+  header > nav > ul > li {
+    padding: 10px 5px;
+    font-size: 1rem;
+    float: left;
+    width: 12.5%;
+  }
+
+  header > nav > ul > li:last-of-type {
+    width: 25%;
+  }
+}

@@ -1,0 +1,176 @@
+/*
+Assignment 3: Web Form
+Name: Tanner Watmough
+Date: December 4, 2022
+
+Filename: oform.css
+*/
+
+/* Form Layout Styles */
+
+div.formRow {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin: 7px 0px;
+}
+
+div.formRow > * {
+  -webkit-flex: 1 1 150px;
+  flex: 1 1 150px;
+}
+
+form#cOrder {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  min-width: 300px;
+  font-size: 0.8em;
+}
+
+form#cOrder fieldset {
+  margin: 5px 15px;
+  width: 80%;
+}
+
+
+div.optionsRow label {
+  font-size: 1em;
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+div.optionsRow {
+  width: 100%;
+}
+
+div.optionsRow fieldset {
+  border: 0;
+}
+
+div.optionsRow input[type="radio"] {
+  height: 1em;
+  line-height: 1em;
+  vertical-align: center;
+  margin: 5px 0 0 0;
+  padding: 0;
+}
+
+div#warrantyContainer {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+div#requestsArea {
+  width: 100%;
+  margin-left: 15px;
+}
+
+/* Text Area Styles */
+textarea {
+  display: block;
+  margin: 10px 0 10px 15px;
+  height: 200px;
+  width: 80%;
+}
+
+/* Form Button Styles */
+div#formButtons {
+  text-align: left;
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+}
+
+input[type='submit'], input[type='reset'], div#formButtons button a {
+  font-size: 1.2em;
+}
+
+input[type='submit'], input[type='reset'], div#formButtons button {
+  margin: 5px;
+  width: 90%;
+}
+
+div#formButtons button a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Validation Styles */
+input:focus, select:focus, textarea:focus {
+  background-color: rgb(255, 255, 200);
+}
+
+input#firstName:focus:valid,
+input#lastName:focus:valid,
+input#custStreet:focus:valid,
+input#custCity:focus:valid,
+input#custProv:focus:valid,
+input#custPost:focus:valid,
+input#custTel:focus:valid {
+  background: rgb(220, 255, 220) url(/images/mc_go.png) bottom right/contain no-repeat;
+}
+
+input#firstName:focus:invalid,
+input#lastName:focus:invalid,
+input#custStreet:focus:invalid,
+input#custCity:focus:invalid,
+input#custProv:focus:invalid,
+input#custPost:focus:invalid,
+input#custTel:focus:invalid {
+  background: rgb(255, 232, 233) url(/images/mc_stop.png) bottom right/contain no-repeat;
+}
+
+/* ========================================
+    Tablet Styles: greater than 450px
+   =========================================
+*/
+
+@media only screen and (min-width: 450px) {
+  form#cOrder {
+    margin-left: 15px;
+    font-size: 1em;
+  }
+
+  form#cOrder fieldset {
+    width: 40%;
+  }
+
+  form#cOrder input{
+    font-size: 1em;
+  }
+
+  div#formButtons {
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    width: 100%;
+  }
+  
+  input[type='submit'], input[type='reset'], div#formButtons button {
+    margin: 5px;
+    width: 33%;
+    max-width: 150px;
+  }
+
+  textarea {
+    max-width: 500px;
+  }
+}
+
+/* ========================================
+    Desktop Styles: greater than 820px
+   =========================================
+*/
+
+@media only screen and (min-width: 820px) {
+  textarea {
+    width: 100%;
+  }
+}

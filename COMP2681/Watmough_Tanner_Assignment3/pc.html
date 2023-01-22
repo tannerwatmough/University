@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    Assignment 3: Web Form
+    Name: Tanner Watmough
+    Date: December 4, 2022
+
+    Filename: pc.html
+  -->
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Order Form | Millennium Computers</title>
+  <link href="stylesheets/oform.css" rel="stylesheet" />
+  <link href="stylesheets/mill.css" rel="stylesheet" />
+  <script src="scripts/formsubmit.js"></script>
+</head>
+
+<body>
+  <header>
+    <img src="images/mc_logo.png" alt="store logo" />
+    <nav>
+      <a id="navicon" href="#"><img src="images/rb_navicon.png" alt="" /></a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Desktops</a></li>
+        <li><a href="#">Laptops</a></li>
+        <li><a href="#">Peripherals</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Your Account</a></li>
+        <li><a href="#">Shopping Cart</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Build Your Computer</h1>
+    <p>* - required information</p>
+
+    <form id="cOrder" action="http://www.mill_computers.com/order/process.cgi" method="post">
+      <fieldset id="contactInfo">
+        <legend>Contact Information</legend>
+
+        <!-- I used firstName for id as the assignment said field names must be fName etc. -->
+        <div class="formRow">
+          <label for="firstName">First Name *</label>
+          <input name="fName" id="firstName" type="text" required />
+        </div>
+
+        <div class="formRow">
+          <label for="lastName">Last Name *</label>
+          <input name="lName" id="lastName" type="text" required />
+        </div>
+
+        <div class="formRow">
+          <label for="custStreet">Street *</label>
+          <input name="street" id="custStreet" type="text" required />
+        </div>
+
+        <div class="formRow">
+          <label for="custCity">City *</label>
+          <input name="city" id="custCity" type="text" required />
+        </div>
+
+        <div class="formRow">
+          <label for="custProv">Province *</label>
+          <input name="province" id="custProv" type="text" required />
+        </div>
+
+        <div class="formRow">
+          <label for="custPost">Postal Code *</label>
+          <input name="poscode" id="custPost" type="text" placeholder="xxx xxx"
+            pattern="^[ABCEGHJ-NPRSTV-Z][0-9][ABCEGHJ-NPRSTV-Z][0-9][ABCEGHJ-NPRSTV-Z][0-9]$" required />
+          <!-- 
+            Got the regex from 
+            https://stackoverflow.com/questions/15774555/efficient-regex-for-canadian-postal-code-function
+            since the textbook is American and used a simple 5 number regex check.  
+          -->
+        </div>
+
+        <div class="formRow">
+          <label for="custTel">Phone *</label>
+          <input name="phone" id="custTel" type="tel" placeholder="(xxx) xxx-xxxx" 
+            pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required />
+        </div>
+      </fieldset>
+
+
+      <fieldset id="compConfig">
+        <legend>Computer Configuration</legend>
+
+        <div class="formRow">
+          <label for="pSpeedCfg">Processor Speed</label>
+          <select name="pSpeed" id="pSpeedCfg">
+            <option value="3.2 GHz">3.2 GHz</option>
+            <option value="4 GHz">4 GHz</option>
+            <option value="5.2 GHz">5.2 GHz</option>
+          </select>
+        </div>
+
+        <div class="formRow">
+          <label for="memCfg">Memory</label>
+          <select name="mem" id="memCfg">
+            <option value="1 GB">1 GB</option>
+            <option value="2 GB">2 GB</option>
+            <option value="4 GB">4 GB</option>
+            <option value="8 GB">8 GB</option>
+          </select>
+        </div>
+
+        <div class="formRow">
+          <label for="monitorCfg">Monitor Size</label>
+          <select name="monitor" id="monitorCfg">
+            <option value='15"'>15"</option>
+            <option value='17"'>17"</option>
+            <option value='19"'>19"</option>
+            <option value='21"'>21"</option>
+          </select>
+        </div>
+
+        <div class="formRow">
+          <label for="hdCfg">Hard Drive</label>
+          <select name="hd" id="hdCfg">
+            <option value="240 GB">240 GB</option>
+            <option value="500 GB">500 GB</option>
+            <option value="750 GB">750 GB</option>
+            <option value="1 TB">1 TB</option>
+          </select>
+        </div>
+
+        <div class="formRow optionsRow">
+          <label for="dvd">DVD Burner</label>
+          <fieldset>
+            <input name="dvd" id="dYes" value="yes" type="radio" />
+            <label for="dYes">Yes</label>
+            <input name="dvd" id="dNo" value="no" type="radio" />
+            <label for="dNo">No</label>
+          </fieldset>
+        </div>
+
+        <div class="formRow optionsRow">
+          <label for="tuner">Tuner Card</label>
+          <fieldset>
+            <input name="tuner" id="tYes" value="yes" type="radio" />
+            <label for="tYes">Yes</label>
+            <input name="tuner" id="tNo" value="no" type="radio" />
+            <label for="tNo">No</label>
+          </fieldset>
+        </div>
+
+        <div class="formRow optionsRow">
+          <label for="mCard">Media Card Reader</label>
+          <fieldset>
+            <input name="mCard" id="mYes" value="yes" type="radio" />
+            <label for="mYes">Yes</label>
+            <input name="mCard" id="mNo" value="no" type="radio" />
+            <label for="mNo">No</label>
+          </fieldset>
+        </div>
+      </fieldset>
+
+      <div id="warrantyContainer">
+        <input name="warranty" id="oWarranty" value="yes" type="checkbox" />
+        <label for="oWarranty">Yes, I want the 24-month extended warranty</label>
+      </div>
+
+      <div id="requestsArea">
+        <label for="requests">Any special requests on your order?</label>
+        <textarea name="spcRequests" id="requests">
+        </textarea>
+      </div>
+
+      <div id="formButtons">
+        <input class="fButton" value="Send Order" type="submit" />
+        <input class="fButton" value="Cancel Order" type="reset" />
+        <!-- 
+          I could have added input class="fButton" onclick="script" value="Contact Me" type="button"
+          but I opted to try a custom button as I could easily bypass the script and make the button
+          funcitonal before our JavaScript units.
+        -->
+        <button class="fButton" type="button">
+          <a href="mailto:email@example.com">Contact Me</a>
+        </button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <hr />
+    <address>
+      Millennium Computer &#8226; 100 Commerce Drive &#8226; Madison, WI &nbsp; 53597 &#8226; (608) 555-8441
+    </address>
+  </footer>
+</body>
+</html>

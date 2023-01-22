@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!--
+         Assignment 4: Splash Screen Document
+         Author: Tanner Wamtough
+         Date:   December 7, 2022
+   
+         Filename: birthday.html
+
+         Displays current date and famous births on that day. 
+   
+      -->
+      
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Happy Birthday Splash Screen</title>
+      <link href="stylesheets/styles.css" rel="stylesheet" />    
+   </head>
+
+   <body>
+      <header>
+        <img src="images/logo.png" alt="HappyBirthday.com Logo" />
+      </header>
+
+      <main>
+        <p>
+          Today is <br />
+          <span id="currentDate">Saturday, January 1, 2000</span>
+        </p>
+        <p>
+          Born today <br />
+          <span id="famousBirthday">J.D. Salinger (1919) - Author</span>
+        </p>
+      </main>
+
+      <aside>
+        <a href="#">Enter</a>
+      </aside>
+   </body>
+   <!-- 
+    Scripts loaded at the bottom for performance and to ensure
+    DOM objects are available. Alternative is deffer attribute.
+  -->
+   <script src="scripts/modernizr-1.5.js"></script>
+   <script src="scripts/functions.js"></script>
+</html>

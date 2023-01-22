@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/* 
+  Author: Tanner Watmough
+  Date: December 15, 2022
+
+  Ferelden Photography Services Layout Style Sheet
+
+  filename: services_layout.css
+*/ 
+
+main {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 i {
+  font-size: 1rem;
+  top: 10px;
+}
+
+h1 .tooltip .tooltiptext {
+  font-size: 0.8rem;
+  font-weight: normal;
+  bottom: -100px;
+  left: 15px;
+}
+
+div.flexItem {
+  background-color: rgb(240, 240, 240);
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: rgb(51, 51, 51) 8px 5px 5px;
+  width: 80%;
+}
+
+div.flexItem ul {
+  margin: 5px 0;
+  padding: 0;
+  list-style: none;
+}
+
+div.flexItem ul li::after {
+  content: " \02713";
+}
+
+input[type="button"] {
+  color: white;
+  background-color: rgb(10, 100, 10);
+  border-radius: 6px;
+  padding: 10px;
+  margin: 5px auto;
+  cursor: pointer;
+}
