@@ -1,0 +1,4 @@
+Name:     John
+Email:     Johnmail
+Yearly Income:  205.00
+Favorite Color:   blue
