@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Tour Guide</string>
+    <string name="textview">Welcome to the Mobile Apps Tour Guide App. Lab 4</string>
+    <string-array name="string_array_cities">
+        <item>Calgary</item>
+        <item>Victoria</item>
+        <item>Vancouver</item>
+        <item>Toronto</item>
+        <item>Kamloops</item>
+    </string-array>
+    <string name="calgaryDescirption">Calgary, just east of the Rocky Mountains, sits on the Elbow
+        and Bow rivers and houses most of the oil and gas headquarters for Alberta.</string>
+    <string name="victoriaDescirption">Victoria, capital of British Colombia, sits on the craggy
+        southern end of Vancouver Island. It has some of the only rainforests in Canada.</string>
+    <string name="vancouverDescirption">Vancouver, the most populous city in British Colombia and
+        one of the hubs for music, film and television, and technology in Canada</string>
+    <string name="torontoDescirption">Toronto, the most populated city in Canada, boosts a large
+        technology, acting, film, and commerce sector. Sitting on one of the Great Lakes, it offers
+        beautiful vistas right downtown</string>
+    <string name="kamloopsDescirption">Kamloops, home to Thompson Rivers University, and one of the
+        few places you can find Canadian cacti!</string>
+
+</resources>
