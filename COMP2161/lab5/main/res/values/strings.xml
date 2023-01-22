@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Security Token Generator</string>
+    <string name="app_title">PASS CODE</string>
+    <string name="passcode">Generating Code...</string>
+    <string name="timeremain">Initializing…</string>
+    <string name="verifyBtn">Verify</string>
+    <string name="passHistory">Passcode History</string>
+    <string name="passBtn">PASS</string>
+    <string-array name="password_array">
+        <item>Password</item>
+        <item>Password</item>
+        <item>Password</item>
+        <item>Password</item>
+        <item>Password</item>
+    </string-array>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/passHistory_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#474747"
+    android:gravity="center|center_horizontal"
+    android:orientation="vertical"
+    tools:context=".PasscodeHistory">
+
+    <TextView
+        android:id="@+id/historyTxtView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="#1C85B5"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:text="@string/passHistory"
+        tools:text="@string/passHistory" />
+
+    <ListView
+        android:id="@+id/passList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="#1C85B5"
+        android:entries="@array/password_array"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/passBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3C3939"
+        android:textAlignment="center"
+        android:onClick="clearPasswords"
+        android:text="@string/passBtn"
+        tools:text="@string/passBtn" />
+</LinearLayout>
