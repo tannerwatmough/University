@@ -1,0 +1,226 @@
+<!-- 
+  Sample One
+  <html>
+  <head>
+    <title></title> Title is not properly set.
+            
+    There is missing <meta> tags that are important even before we incorporate CSS (styling)
+    and JavaScript (functionality). These include setting the charset and the viewport size.
+  </head>
+        
+  Indentation can really help code readaibility even if it still renders fine without it. 
+        
+  <body>
+        
+    <H1> This page is poorly written</H1>
+        
+    Tag names should be, at the very least, consistent in their capitalization. W3 Consortium recommend 
+    using all lowercase attributes and tag names even if the HTML standards don't strictly requite it. 
+        
+    <p>There are many things wrong with this page. It's not so bad that it won't work on most browsers
+      but it has many things that could be written much better.
+      Your job is to use this code as a starting point and improve it.
+            
+    The above should have a closing </p> even though it isn't strictly necessary.
+    Additional lines for the code could be useful for readability and good style. 
+            
+    <H2>You could, of course, cheat!
+                
+    The above should have a closing </h2> tag. Also lowercase. 
+            
+    <P>There is nothing wrong with using an HTML cleaner such as HTMLTidy, nor in using an accessibility checker like the W3 site to ensure your code works well. In fact, we would highly recommend that you do this whenever you create web pages because they help to ensure your code is compatible with standards and accessible to as many people as possible. Similarly, it makes perfect sense to use a WYSIWYG HTML editor such as Dremweaver orthe open source KompoZer when actually writing web pages.  For the purposes of this exercise, however, you may learn more effectively if you avoid doing that until you are fairly comfortable that you have made as many changes as you can with just the aid of references. The main reason we are learning HTML is so that we can write dynamic JavaScript programs that are embedded within and which use and manipulate HTML, CSS and other browser technologies. If you take short cuts at this point, you will find it <i>much</i> harder later on. Remember, while marks will be lost if you don't take care to deal with the problems on these pages, the main things we are looking for relate to your ability to use the technology well and effectively, paying close attention to the design needs you have already identified
+
+    Lowercase tag, closing </p> tag. Additional <p> elements might help user readaibility as this is on
+    the verge of being a wall of text. The <i> tag is interesting because HTML Dog doesn't recommend using
+    a presentational element for HTML, even though the new meaning is an alternate voice. The better tag 
+    regardless, is the <em> tag as the much is trying to semantically add emphasis which the <em> tag
+    does. It also stylistically does the same thing in most browsers. It should also be broken into more
+    lines with or without more <p> tags as opening and reading this in Notepad would be a nightmare. 
+
+    <H3>Adding links
+        
+    Lowercase tag, closing </h3> tag, and to help readability, keep the header content on the same line
+    when adding it on a new line doesn't help/enhance code readibility, like in this case. 
+
+    <p><a href="sample2.html">This is a link to the other page in this badly written pair of pages</a>). It uses a relative URL to point to a file in the same file system. This is necessary if you are building a site for portability, so that you can move it from one place (say your local computer) to another (say, your website).
+
+    Presentation wise, an opening ( would be useful as there is a closing ) after the closing </a> tag. 
+    A closing tag </p> would also be useful. The link text is descriptive enough. Additional lines would
+    be useful. Additional lines for the code could be useful for readability and good style. 
+
+    <P><a href=http://www.athabascau.ca> And this is a link to Athabasca's main site</a> It uses an absolute URL that points to a unique web address. When the site moves, it will still point to that same address.
+
+    Lowercase <p> tag and closing </p> tag. The absolute link should be enclosed in " ". Link text is
+    descriptive enough. You could argue https:// should be used so it is automatically encrytped but a lot
+    of browsers do this automatically and I don't think it's strictly required by any standards. 
+    Additional lines for the code could be useful for readability and good style.
+        
+    <h3>Using pictures</h3>
+        
+    Good.
+
+    <p>Pictures are not a part of a web page - the HTML page includes a link that tells the browser to embed the image (if it can) and some extra optional attributes such as its position relative to the text. It is far preferable to use stylesheets for this kind of formatting, but that's a subject for the next unit.
+
+    Closing <p> tag needed. Agreed with using stylesheets for formatting instead (W3 seems to really 
+    push the style) secitons on learners without explaining it is better to stick with structure/content
+    for HTML and using CSS for styling/presentation. Additional lines for the code could be useful for
+    readability and good style.
+
+    <img src=aulogo.gif>
+
+    Alt text should be used for users who have slow internet connections, if the file is moved or a typo
+    in the src="value", or the person is using a screen reader. " " around the value of an attribute, like
+    src, is best practice. width and height may be set here to ensure there is no stuttering upon loading
+    the page and is good style. 
+
+    <h3>Making lists
+
+    Closing </h3> tag. 
+
+    <ul><li>lists are useful<li> for many things<li> and can be unordered, <ul<li>indented<ol><li>numbered<li>like this</li></ol></ul><li> and more</li></ul>
+
+    This is, truthfully, not very readable in code. It is best to indent the list elements of an unordered
+    or ordered list like below. Also, while not strictly necessary (fun fact), a closing </li> tag can
+    help code readability. The secondary, nested <ul> is also missing a closing >. This is also not
+    consistent in its disuse and usage of <li></li> or strictly <li>content <li> next list item. Here is
+    what I think the author was going
+
+    for: 
+    <ul>
+      <li>lists are useful</li>
+      <li>for many thigns</li>
+      <li>and can be unordered,</li>
+      <ul>
+        <li>indented</li>
+        <ol>
+          <li>numbered</li>
+          <li>like this</li>
+        </ol>
+      </ul>
+      <li> and more</li>
+    </ul>
+
+    <h3>Making tables
+
+    Closing </h3> tag. 
+
+    <table border=1><tr><td>Tables should only be used for tabular data<td>and never for layout</tr>
+    <tr><td>but many people do <td>use them for layout</tr>
+    <tr><td colspan=2>It's not good for accessibility. Stylesheets work much better for this</td>
+    </tr>
+    </table>
+
+    This is hard to read and is missing quite a few tags. Border is also not a valid attribute. 
+    A fixed table is below:
+    <table>
+      <tr>
+        <td>Tables should only be used for tabular data</td>
+        <td>and never for layout</td>
+      </tr>
+      <tr>
+        <td>but many people do</td>
+        <td>use them for layout</td>
+      </tr>
+      <tr>
+        <td colspan="2">It's not good for accessibility. Stylesheets work much better for this</td>
+      </tr>
+    </table>
+
+
+
+  </body>
+  </html> 
+-->
+
+<!-- 
+  We set the Document type to html as there are other markup languages. 
+  This helps the browser know what to do with the document. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /> 
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    
+<header>
+  <!-- 
+    I use an H2 for header since it is not the page's main content. HTML 5 standards
+    allow for multiple H1s but some screen readers still have difficulty with this. 
+    https://htmldog.com/guides/html/beginner/headings/ 
+  -->
+  <h2><a href="index.html">Tanner Watmough</a></h2>
+
+  <nav>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <ul>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <ul>
+          <li><a href="projects/projectone.html">Project One</a></li>
+          <li><a href="projects/projecttwo.html">Project Two</a></li>
+          <li><a href="projects/projectthree.html">Project Three</a></li>
+        </ul>
+      </ul>
+      <li><a href="blog.html">Blog</a></li>
+      <ul>
+        <li><a href="articles/unitone.html">Unit 1: Site Design</a></li>
+        <li><a href="articles/unittwo.html">Unit 2: HTML Site Building</a></li>
+        <li><a href="articles/unitthree.html">Unit 3: CSS Site Styling</a></li>
+        <li><a href="articles/unitfour.html">Unit 4: Script Use and Augmentation</a></li>
+        <li><a href="articles/unitfive.html">Unit 5: Writing JavaScript</a></li>
+        <li><a href="articles/unitsix.html">Unit 6: Using Libraries</a></li>
+        <li><a href="articles/unitseven.html">Unit 7: Using External Data Sources</a></li>
+        <li><a href="articles/systemsarticle.html">Systems Analysis and Design Course Reflection</a></li>
+      </ul>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <input type="text" placeholder="Search" />
+  </nav>
+</header>
+
+<main>
+
+  <h1>Welcome!</h1>
+
+  <img src="images/tannerrice.JPG" alt="Tanner (site author) eating rice with a butter knife" width="240" height="240" />          
+  <p>
+    My name is Tanner Watmough and I am a computer science student at Thompson Rivers University and Athabasca University.
+    This website was created for the purposes of my Introduction to Web Progrmaming course at Athabasca University. It
+    contains various blogs that contain my reflections on the units of the course as well as another course I'm taking this
+    semester, COMP 361 Systems Analysis and Design. You can also find my resume, a few different projects, and my contact
+    information. And yes, that is a picture of me eating rice with a butter knife while I was doing a course in Ukraine in
+    2019. They ran out of forks that day. 
+  </p>
+</main>
+
+<footer>
+  <div id="author-info">
+    <p>Author: <span id="author-name">Tanner Watmough</span></p>
+    <p>Last modified on <span id="modify-date">August 2, 2022</span></p>
+  </div>
+  <nav>
+    <ul>
+      <li>
+        <div id="social-container">
+          <a href="https://www.linkedin.com/in/tanner-watmough/"><img src="images/linkedinlogo.png" alt="Tanner's LinkedIn Profile"
+            width="60" height="60" /></a>
+          <a href="https://github.com/tannerwatmough"><img src="images/githublogo.png" alt="Tanner's GitHub Profile" width="60"
+            height="60" /></a>
+          <a href="https://www.youtube.com/channel/UC6p34CQj_2RP8TsqB3vTNYQ/videos"><img src="images/youtubelogo.jpg" 
+            alt="Tanner's YouTube Channel" width="60" height="60" /></a>
+        </div>
+      </li>
+      <li><a href="references.html">References</a></li>
+      <li><a href="legal.html">Legal Information</a></li>
+      <li><a href="sitemap.html">Site Map</a></li>
+    </ul>
+  </nav>
+</footer>
+
+</body>
+</html>   

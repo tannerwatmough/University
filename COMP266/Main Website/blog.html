@@ -1,0 +1,136 @@
+<!-- 
+  We set the Document type to html as there are other markup languages. 
+  This helps the browser know what to do with the document. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /> 
+  <title>Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    
+<header>
+  <!-- 
+    I use an H2 for header since it is not the page's main content. HTML 5 standards
+    allow for multiple H1s but some screen readers still have difficulty with this. 
+    https://htmldog.com/guides/html/beginner/headings/ 
+  -->
+  <h2><a href="index.html">Tanner Watmough</a></h2>
+
+  <nav class="navbar" id="top-navbar">
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <ul>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <ul>
+          <li><a href="projects/projectone.html">Project One</a></li>
+          <li><a href="projects/projecttwo.html">Project Two</a></li>
+          <li><a href="projects/projectthree.html">Project Three</a></li>
+        </ul>
+      </ul>
+      <li><a href="blog.html">Blog</a></li>
+      <ul>
+        <li><a href="articles/unitone.html">Unit 1: Site Design</a></li>
+        <li><a href="articles/unittwo.html">Unit 2: HTML Site Building</a></li>
+        <li><a href="articles/unitthree.html">Unit 3: CSS Site Styling</a></li>
+        <li><a href="articles/unitfour.html">Unit 4: Script Use and Augmentation</a></li>
+        <li><a href="articles/unitfive.html">Unit 5: Writing JavaScript</a></li>
+        <li><a href="articles/unitsix.html">Unit 6: Using Libraries</a></li>
+        <li><a href="articles/unitseven.html">Unit 7: Using External Data Sources</a></li>
+        <li><a href="articles/systemsarticle.html">Systems Analysis and Design Course Reflection</a></li>
+      </ul>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <input type="text" placeholder="Search" />
+  </nav>
+</header>
+<main>
+
+  <h1>Blog Posts</h1>
+
+  <article>
+    <img src="images/sitemap.png" alt="The site map for this website" width="240" height="120" />
+    <h2><a href="articles/unitone.html">Unit 1: Site Design</a></h2>
+    <p>Date <span class="tag">COMP 266</span></p>
+  </article>
+
+  <article>
+    <img src="images/htmlcode.jpeg" alt="A picture of HTML code" width="240" height="120" />
+    <!-- https://www.pexels.com/photo/turned-on-computer-monitor-displaying-text-270360/ -->
+    <h2><a href="articles/unittwo.html">Unit 2: HTML Site Building</a></h2>
+    <p>Date <span class="tag">COMP 266</span></p>
+  </article>
+
+  <article>
+    <img src="images/csscode.png" alt="A picture of CSS code" width="240" height="120" />
+    <!-- https://www.pexels.com/photo/close-up-of-computer-keyboard-248515/ -->
+    <h2><a href="articles/unitthree.html">Unit 3: CSS Site Styling</a></h2>
+    <p>Date <span class="tag">COMP 266</span></p>
+  </article>
+
+  <article>
+    <img src="images/techworker.jpeg" alt="A tech professional" width="240" height="120" />
+    <!-- https://www.pexels.com/photo/photo-of-woman-using-laptop-3194518/ -->
+    <h2><a href="articles/unitfour.html">Unit 4: Script Use and Augmentation</a></h2>
+    <p>Date <span class="tag">COMP 266</span></p>
+  </article>
+
+  <article>
+    <img src="images/javascriptcode.jpeg" alt="A picture of JavaScript code" width="240" height="120" />
+    <!-- https://www.pexels.com/photo/code-on-a-screen-4383298/ -->
+    <h2><a href="articles/unitfive.html">Unit 5: Writing JavaScript</a></h2>
+    <p>Date <span class="tag">COMP 266</span></p>
+  </article>
+
+  <article>
+    <img src="images/library.jpeg" alt="A library" width="240" height="120" />
+    <!-- https://www.pexels.com/photo/legislative-library-of-uruguay-interior-6641072/ -->
+    <h2><a href="articles/unitsix.html">Unit 6: Using Libraries</a></h2>
+    <p>Date <span class="tag">COMP 266</span></p>
+  </article>
+
+  <article>
+    <img src="images/server.jpeg" alt="A picture of a mining rig" width="240" height="120" />
+    <!-- https://www.pexels.com/photo/close-up-photo-of-mining-rig-1148820/ -->
+    <h2><a href="articles/unitseven.html">Unit 7: Using External Data Sources</a></h2>
+    <p>Date <span class="tag">COMP 266</span></p>
+  </article>
+
+  <article>
+    <img src="images/serverworker.jpeg" alt="A software engineer in front of a server" width="240" height="120" />
+    <!-- https://www.pexels.com/photo/software-engineer-standing-beside-server-racks-1181354/ -->
+    <h2><a href="articles/systemsarticle.html">Systems Analysis and Design Course Reflection</a></h2>
+    <p>Date <span class="tag">COMP 361</span></p>
+  </article>
+</main>
+    
+<footer>
+  <div id="author-info">
+    <p>Author: <span id="author-name">Tanner Watmough</span></p>
+    <p>Last modified on <span id="modify-date">August 2, 2022</span></p>
+  </div>
+  <nav class="navbar" id="footer-navbar">
+    <ul>
+      <li>
+        <div id="social-container">
+          <a href="https://www.linkedin.com/in/tanner-watmough/"><img src="images/linkedinlogo.png" alt="Tanner's LinkedIn Profile"
+            width="60" height="60" /></a>
+          <a href="https://github.com/tannerwatmough"><img src="images/githublogo.png" alt="Tanner's GitHub Profile" width="60"
+            height="60" /></a>
+          <a href="https://www.youtube.com/channel/UC6p34CQj_2RP8TsqB3vTNYQ/videos"><img src="images/youtubelogo.jpg" 
+            alt="Tanner's YouTube Channel" width="60" height="60" /></a>
+        </div>
+      </li>
+      <li><a href="references.html">References</a></li>
+      <li><a href="legal.html">Legal Information</a></li>
+      <li><a href="sitemap.html">Site Map</a></li>
+    </ul>
+  </nav>
+</footer>
+
+</body>
+</html>   

@@ -1,0 +1,83 @@
+<!-- 
+  We set the Document type to html as there are other markup languages. 
+  This helps the browser know what to do with the document. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /> 
+  <title>Unit Two: HTML Site Building</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    
+<header>
+  <!-- 
+    I use an H2 for header since it is not the page's main content. HTML 5 standards
+    allow for multiple H1s but some screen readers still have difficulty with this. 
+    https://htmldog.com/guides/html/beginner/headings/ 
+  -->
+  <h2><a href="../index.html">Tanner Watmough</a></h2>
+
+  <nav>
+    <ul>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../portfolio.html">Portfolio</a></li>
+      <ul>
+        <li><a href="../resume.html">Resume</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <ul>
+          <li><a href="../projects/projectone.html">Project One</a></li>
+          <li><a href="../projects/projecttwo.html">Project Two</a></li>
+          <li><a href="../projects/projectthree.html">Project Three</a></li>
+        </ul>
+      </ul>
+      <li><a href="../blog.html">Blog</a></li>
+      <ul>
+        <li><a href="unitone.html">Unit 1: Site Design</a></li>
+        <li><a href="unittwo.html">Unit 2: HTML Site Building</a></li>
+        <li><a href="unitthree.html">Unit 3: CSS Site Styling</a></li>
+        <li><a href="unitfour.html">Unit 4: Script Use and Augmentation</a></li>
+        <li><a href="unitfive.html">Unit 5: Writing JavaScript</a></li>
+        <li><a href="unitsix.html">Unit 6: Using Libraries</a></li>
+        <li><a href="unitseven.html">Unit 7: Using External Data Sources</a></li>
+        <li><a href="systemsarticle.html">Systems Analysis and Design Course Reflection</a></li>
+      </ul>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+    <input type="text" placeholder="Search" />
+  </nav>
+</header>
+
+<main>
+
+  <h1>Unit Two: HTML Site Building</h1>
+        
+</main>
+
+<footer>
+  <div id="author-info">
+    <p>Author: <span id="author-name">Tanner Watmough</span></p>
+    <p>Last modified on <span id="modify-date">August 2, 2022</span></p>
+  </div>
+  <nav>
+    <ul>
+      <li>
+        <div id="social-container">
+          <a href="https://www.linkedin.com/in/tanner-watmough/"><img src="../images/linkedinlogo.png" alt="Tanner's LinkedIn Profile"
+            width="60" height="60" /></a>
+          <a href="https://github.com/tannerwatmough"><img src="../images/githublogo.png" alt="Tanner's GitHub Profile" width="60"
+            height="60" /></a>
+          <a href="https://www.youtube.com/channel/UC6p34CQj_2RP8TsqB3vTNYQ/videos"><img src="../images/youtubelogo.jpg" 
+            alt="Tanner's YouTube Channel" width="60" height="60" /></a>
+        </div>
+      </li>
+      <li><a href="../references.html">References</a></li>
+      <li><a href="../legal.html">Legal Information</a></li>
+      <li><a href="../sitemap.html">Site Map</a></li>
+    </ul>
+  </nav>
+</footer>
+
+</body>
+</html>   
