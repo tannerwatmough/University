@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="welcome">Welcome to Tic Tac Toe!</string>
+    <string name="username">Enter Names</string>
+    <string name="play">Play Game</string>
+    <string name="standings">Player Standings</string>
+    <string name="enterName">Name Entry</string>
+    <string name="enterName1">Enter Player 1 Name:</string>
+    <string name="enterName1Hint">Enter Player 1 name...</string>
+    <string name="enterName2">Enter Player 2 Name:</string>
+    <string name="enterName2Hint">Enter Player 2 name...</string>
+    <string name="saveName">Save</string>
+    <string name="switch1">1p | 2p</string>
+    <string name="playAgainBtn">Play Again</string>
+</resources>
