@@ -1,0 +1,39 @@
+<resources>
+    <string name="disclaimer">
+        Welcome to my habit tracker app! We do not collect any information about you as all data is
+        stored locally on the user device. This ensures your privacy is respected. This application
+        is open source and can be redistributed and used as you link. Please press the agree button
+        below if you are ready to use the app!
+    </string>
+    <string name="appLogoDesc">App\'s Logo</string>
+    <string name="agreeBtn">Agree</string>
+    <string name="title">Welcome</string>
+    <string name="enterName">Enter Name</string>
+    <string name="nameHint">Your Name...</string>
+    <string name="enterPass">Enter Password</string>
+    <string name="passHint">Enter Password...</string>
+    <string name="loginBtn">Login</string>
+    <string name="app_name">Habit Tracker Final</string>
+    <string name="add_task">+</string>
+    <string name="delete_task">Del</string>
+    <string name="diary_task">Diary</string>
+    <string name="progress_bar">Ratings Bar</string>
+    <string name="increment_bar">+</string>
+    <string name="decerement_bar">-</string>
+    <string name="settings_btn">Settings</string>
+    <string name="task_name">Task Name</string>
+    <string name="save_btn">Save</string>
+    <string name="diary_name">Enter diary entry here...</string>
+    <string name="diaryEditBtn">Edit</string>
+    <string name="diaryDelBtn">Delete</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="light_mode">Light Mode</string>
+    <string name="logout">Logout</string>
+    <string name="contact">Contact the Developer</string>
+    <string name="report">
+        If you have any bugs you\'d like to report or features you want to add, please contact the developer at T00712721@mytru.ca
+    </string>
+    <string name="subjectLineHint">Subject: ...</string>
+    <string name="emailBodyHint">Enter body of email here...</string>
+    <string name="sendBtn">Send</string>
+</resources>
