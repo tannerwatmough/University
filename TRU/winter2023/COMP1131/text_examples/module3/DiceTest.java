@@ -3,13 +3,17 @@ import java.util.Random;
 class DiceTest {
   public static void main(String[] args) {
     int sum = 0;
+    // numberInstances hold the number of times values 2-12 have been rolled.
     int[] numberInstances = new int[11], rolls = new int[100000];
 
     Random rand = new Random();
 
+    // Adds a random integer between 2 and 12 to rolls[]
+    // 2 is lowest because two die can only get 2 so the one die is normalized
     for (int i = 0; i < 100000; i++) {
       rolls[i] = rand.nextInt(11) + 2;
       switch (rolls[i]) {
+        // stores rolls 2-12 into numberInstances array to count occurrences.
         case 2:
           numberInstances[0]++;
           break;
@@ -46,8 +50,10 @@ class DiceTest {
       }
     }
 
+    // Prints out number of occurrences for each di(c)e throw.
     for (int i = 0; i < 11; i++) {
       System.out.println("# of times " + (i + 2) + " was rolled: " + numberInstances[i]);
+      // Confirms 10,000 rolls were stored and resets the numberInstances array.
       sum += numberInstances[i];
       numberInstances[i] = 0;
     }
@@ -56,6 +62,7 @@ class DiceTest {
     System.out.println(sum);
     System.out.println();
 
+    // Two die thrown, stores sum in rolls array.
     for (int i = 0; i < 100000; i++) {
       rolls[i] = (rand.nextInt(6) + 1) + (rand.nextInt(6) + 1);
       switch (rolls[i]) {
@@ -96,6 +103,7 @@ class DiceTest {
 
     }
 
+    // Reset sum to not add second run to first.
     sum = 0;
 
     for (int i = 0; i < 11; i++) {
