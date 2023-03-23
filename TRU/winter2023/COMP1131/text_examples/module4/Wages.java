@@ -1,27 +1,31 @@
 import java.text.NumberFormat;
 import java.util.Scanner;
 
-public class Wages
-{
-  final double RATE = 8.25; // regular pay rate
-  final int STANDARD = 40; // standard hours in work week
+public class Wages {
 
-  Scanner scan = new Scanner(System.in);
+  public static void main(String args[]) {
+    final double RATE = 8.25; // regular pay rate
+    final int STANDARD = 40; // standard hours in work week
 
-	double pay = 0.0;
+    Scanner scan = new Scanner(System.in);
 
-  System.out.print("Enter the number of hours worked: ");
-  int hours = scan.nextInt();
+    double pay = 0.0;
 
-  System.out.println();
+    System.out.print("Enter the number of hours worked: ");
+    int hours = scan.nextInt();
 
-  // Pay overtime at "time and a half"
+    System.out.println();
 
-  if (hours > STANDARD)
-	  pay = STANDARD * RATE + (hours-STANDARD) * (RATE * 1.5);
-  else
-    pay = hours * RATE;
+    // Pay overtime at "time and a half"
 
-  NumberFormat fmt = NumberFormat.getCurrencyInstance();
-  System.out.println("Gross earnings: " + fmt.format(pay));
+    if (hours > STANDARD)
+      pay = STANDARD * RATE + (hours - STANDARD) * (RATE * 1.5);
+    else
+      pay = hours * RATE;
+
+    NumberFormat fmt = NumberFormat.getCurrencyInstance();
+    System.out.println("Gross earnings: " + fmt.format(pay));
+
+    scan.close();
+  }
 }
