@@ -28,8 +28,5 @@ public class Multiples {
     }
 
     scan.close();
-
-    if (limit < value)
-      System.out.println("a is less than b");
   }
 }
