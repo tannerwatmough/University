@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Discount Calculator</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <main>
+        <h1>Product Discount Calculator</h1>
+        <form action="display_discount.php" method="post">
+
+            <div id="data">
+                <label>Product Description:</label>
+                <input type="text" name="product_description"><br>
+
+                <label>List Price:</label>
+                <!-- Changed input type to number with a min value of 0 and 
+                a step value of 0.01 so decimal numbers could be entered.
+                Additionally, with a min of 0, values can't be set to negative
+                amounts  -->
+                <input type="number" name="list_price" min="0" step="0.01"><br>
+
+                <label>Discount Percent:</label>
+                <input type="number" name="discount_percent" min="0" step="0.01">
+                <span>%</span><br>
+            </div>
+
+            <div id="buttons">
+                <label>&nbsp;</label>
+                <input type="submit" value="Calculate Discount"><br>
+            </div>
+
+        </form>
+    </main>
+</body>
+</html>
